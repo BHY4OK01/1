@@ -1,0 +1,38 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: #faf8ef;
+    padding: 20px;
+}
+
+h1 {
+    color: #776e65;
+}
+
+#board {
+    touch-action: none;
+    user-select: none;
+    display: grid;
+    grid-template-columns: repeat(4, 80px);
+    gap: 10px;
+    margin: 20px auto;
+    width: 360px;
+}
+
+.cell {
+    cursor: pointer;
+    width: 80px;
+    height: 80px;
+    background: #eee4da;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #776e65;
+}
+
+.cell-2 { background: #eee4da; }
+.cell-4 { background: #ede0c8; }
+.cell-8 { background: #f2b179; color: white; }
